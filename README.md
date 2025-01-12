@@ -38,8 +38,6 @@ Object:
     Plants
         Attributes: Seed sprite
         Actions: Spawned in the position of the player at the time of planting
-
-Player
     Attributes:
         Movement speed: A float number is set for movement speed, _speed controls that
         Seed Count:
@@ -67,7 +65,11 @@ UI
         Actions:
             Decreases the count when the player plants a seed
             Updated dynamically through the UpdateSeeds() method in the PlantCountUI class
-            
+
+I seporated the project to three parts, UI which displays planted and remaining seed count. Player, which controls movement and seed planting, and Plants which spawns the seed at the player's location. The player script implemented movement from the PlayerMovement() method and seed planting function from PlantSeed() method. The script interacts with PlantCountUI by calling UpdateSeeds() when a seed it planted. There are two classes, player class which handles movement, input and seed planting and PlantCountUI which updates the seed count through the UpdateSeeds() method. This project has 3 game objects, player which implements movement and planting, PlantCountUI which manages UI text update, Canvas (texts) which only displays the seed counts, and PlantPrefab which is the seed object.
+
+One difficulty that I encountered is trying to link the scrip that updates the seed count and the text object, initially, I tried to add a component directly on to the two text objects and linking them to PlantCountUI which will not work because it has to like with the player as well which I figured out later after trying for a while.
+
 ## Open-Source Assets
 If you added any other outside assets, list them here!
 - [Sprout Lands sprite asset pack](https://cupnooble.itch.io/sprout-lands-asset-pack) - character and item sprites

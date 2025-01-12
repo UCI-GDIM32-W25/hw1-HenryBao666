@@ -61,8 +61,13 @@ UI
         Actions:
 	        Increases the count when the player plants a seed
 	        Updated dynamically through the UpdateSeeds() method in the PlantCountUI class
-
-
+    Seeds Remaining UI
+        Attributes:
+            A TextMeshPro - Text field that displays the number of seeds planted by the player
+        Actions:
+            Decreases the count when the player plants a seed
+            Updated dynamically through the UpdateSeeds() method in the PlantCountUI class
+            
 ## Open-Source Assets
 If you added any other outside assets, list them here!
 - [Sprout Lands sprite asset pack](https://cupnooble.itch.io/sprout-lands-asset-pack) - character and item sprites

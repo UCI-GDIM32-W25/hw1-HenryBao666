@@ -64,7 +64,7 @@ UI
 
     Seeds Remaining UI
 	    Attributes:
-	        A TextMeshPro - Text field that displays the number of seeds remaining
+             A TextMeshPro - Text field that displays the number of seeds remaining
 	    Actions:
 	        Decreases the count when the player plants a seed
 	        Updated dynamically through the UpdateSeeds() method in the PlantCountUI class

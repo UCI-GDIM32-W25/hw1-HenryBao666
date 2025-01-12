@@ -62,12 +62,6 @@ UI
 	        Increases the count when the player plants a seed
 	        Updated dynamically through the UpdateSeeds() method in the PlantCountUI class
 
-    Seeds Remaining UI
-	    Attributes:
-             A TextMeshPro - Text field that displays the number of seeds remaining
-	    Actions:
-	        Decreases the count when the player plants a seed
-	        Updated dynamically through the UpdateSeeds() method in the PlantCountUI class
 
 ## Open-Source Assets
 If you added any other outside assets, list them here!
